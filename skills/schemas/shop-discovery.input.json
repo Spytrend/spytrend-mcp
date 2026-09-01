@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "anyOf": [{"required": ["vertical"]}, {"required": ["country"]}],
+  "properties": {
+    "vertical": {"type": "string", "maxLength": 100},
+    "country": {"type": "string", "pattern": "^[A-Za-z]{2}$"},
+    "platform": {"type": "string", "maxLength": 80},
+    "output_mode": {"type": "string", "enum": ["chat", "markdown", "html"]},
+    "language": {"type": "string", "pattern": "^[A-Za-z]{2,8}(-[A-Za-z0-9]{1,8})*$", "maxLength": 16},
+    "include_media": {"type": "string", "enum": ["false", "true"], "default": "false"}
+  }
+}

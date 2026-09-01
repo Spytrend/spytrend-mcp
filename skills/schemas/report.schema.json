@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["title", "scope", "summary", "coverage", "generated_at", "sections"],
+  "properties": {
+    "title": {"type": "string", "minLength": 1, "maxLength": 200},
+    "scope": {"type": "string", "minLength": 1, "maxLength": 500},
+    "summary": {"type": "string", "minLength": 1, "maxLength": 5000},
+    "coverage": {"type": "string", "minLength": 1, "maxLength": 1000},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "spend": {"type": "string", "maxLength": 200},
+    "language": {"type": "string", "pattern": "^[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*$", "maxLength": 16},
+    "labels": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scope": {"type": "string", "maxLength": 100},
+        "coverage": {"type": "string", "maxLength": 100},
+        "period": {"type": "string", "maxLength": 100},
+        "spend": {"type": "string", "maxLength": 100},
+        "generated": {"type": "string", "maxLength": 100},
+        "empty_title": {"type": "string", "maxLength": 200},
+        "empty_action": {"type": "string", "maxLength": 300}
+      }
+    },
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "value"],
+      "properties": {
+        "label": {"type": "string", "maxLength": 100},
+        "value": {"type": "string", "maxLength": 200}
+      }
+    },
+    "sections": {
+      "type": "array",
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "rows"],
+        "properties": {
+          "title": {"type": "string", "maxLength": 200},
+          "description": {"type": "string", "maxLength": 2000},
+          "rows": {
+            "type": "array",
+            "maxItems": 200,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["label", "value"],
+              "properties": {
+                "label": {"type": "string", "maxLength": 200},
+                "value": {"type": ["string", "number", "integer", "boolean", "null"]},
+                "url": {"type": "string", "format": "uri", "maxLength": 2048}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["keyword"],
+  "properties": {
+    "keyword": {"type": "string", "minLength": 1, "maxLength": 120},
+    "vertical": {"type": "string", "maxLength": 100},
+    "country": {"type": "string", "pattern": "^[A-Za-z]{2}$"},
+    "period_from": {"type": "string", "format": "date"},
+    "period_to": {"type": "string", "format": "date"},
+    "output_mode": {"type": "string", "enum": ["chat", "markdown", "html"]},
+    "language": {"type": "string", "pattern": "^[A-Za-z]{2,8}(-[A-Za-z0-9]{1,8})*$", "maxLength": 16},
+    "include_media": {"type": "string", "enum": ["false", "true"], "default": "false"}
+  }
+}
