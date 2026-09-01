@@ -1,0 +1,11 @@
+# Local credentials and generated files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+.DS_Store
+.venv/
+__pycache__/
+reports/
