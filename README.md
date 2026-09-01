@@ -1,0 +1,1 @@
+# Spytrend MCP Server
