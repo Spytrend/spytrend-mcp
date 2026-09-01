@@ -1,0 +1,13 @@
+interface:
+  display_name: "SpyTrend Shop Discovery"
+  short_description: "Discover stores with bounded market rankings"
+  default_prompt: "Use $spytrend-shop-discovery to find growing ecommerce stores in the United States."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "spytrend"
+      description: "SpyTrend advertising intelligence MCP server"
+      transport: "streamable_http"
+      url: "https://mcp.spytrend.com/mcp"
+policy:
+  allow_implicit_invocation: false
