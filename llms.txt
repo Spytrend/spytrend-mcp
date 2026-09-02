@@ -22,12 +22,12 @@ everything at once.
 ## Connect
 
 - [Connection page](https://spytrend.com/mcp/): endpoint, sign-in and per-client setup
-- [Quickstart](https://github.com/cherlysch/spytrend-mcp/blob/main/docs/quickstart.md): connecting in five minutes, per client
-- [Repository](https://github.com/cherlysch/spytrend-mcp): connection passport, tool reference and recipes
+- [Quickstart](https://github.com/Spytrend/spytrend-mcp/blob/main/docs/quickstart.md): connecting in five minutes, per client
+- [Repository](https://github.com/Spytrend/spytrend-mcp): connection passport, tool reference and recipes
 
 ## Tools
 
-- [Tool reference](https://github.com/cherlysch/spytrend-mcp/blob/main/docs/tools.md): every documented tool, when to use it and when not to
+- [Tool reference](https://github.com/Spytrend/spytrend-mcp/blob/main/docs/tools.md): every documented tool, when to use it and when not to
 - Search: `search_ads`, `search_creatives`, `search_advertisers`, `search_webmasters`, `search_hubs`, `search_shops`
 - One record in full: `get_ad`, `get_advertiser`, `get_webmaster`, `get_creative`, `get_shop`
 - Download: `get_media` — the image or video file itself
@@ -38,20 +38,20 @@ everything at once.
 
 ## Recipes
 
-- [Find competitors](https://github.com/cherlysch/spytrend-mcp/blob/main/examples/find-competitors.md): who else is advertising in your market, and what they run
-- [Match to a business type](https://github.com/cherlysch/spytrend-mcp/blob/main/examples/by-business-type.md): advertising from businesses like yours, no competitor names needed
-- [Top of a niche](https://github.com/cherlysch/spytrend-mcp/blob/main/examples/top-of-niche.md): what is running in a category, by how long it has been up
-- [What is running now](https://github.com/cherlysch/spytrend-mcp/blob/main/examples/running-now.md): what is new and picking up in an industry
+- [Find competitors](https://github.com/Spytrend/spytrend-mcp/blob/main/examples/find-competitors.md): who else is advertising in your market, and what they run
+- [Match to a business type](https://github.com/Spytrend/spytrend-mcp/blob/main/examples/by-business-type.md): advertising from businesses like yours, no competitor names needed
+- [Top of a niche](https://github.com/Spytrend/spytrend-mcp/blob/main/examples/top-of-niche.md): what is running in a category, by how long it has been up
+- [What is running now](https://github.com/Spytrend/spytrend-mcp/blob/main/examples/running-now.md): what is new and picking up in an industry
 
 ## Skills
 
-- [Skills](https://github.com/cherlysch/spytrend-mcp/tree/main/skills): six ready-made workflows for Claude Code and Codex — vertical intelligence, advertiser overview, webmaster overview, website review, keyword search, shop discovery. Plain folders; copy into the assistant's skills directory.
+- [Skills](https://github.com/Spytrend/spytrend-mcp/tree/main/skills): six ready-made workflows for Claude Code and Codex — vertical intelligence, advertiser overview, webmaster overview, website review, keyword search, shop discovery. Plain folders; copy into the assistant's skills directory.
 - [Connection manual for agents](https://mcp.spytrend.com/llms.txt): token flow, per-client connection paths, access and billing, straight from the server.
 
 ## Product
 
 - [Plans](https://spytrend.com/pricing/): Starter free, Pro, Team, Enterprise
-- [Limits and tokens](https://github.com/cherlysch/spytrend-mcp/blob/main/docs/limits.md): what each call costs, what is free, what the assistant sees when the balance runs out
+- [Limits and tokens](https://github.com/Spytrend/spytrend-mcp/blob/main/docs/limits.md): what each call costs, what is free, what the assistant sees when the balance runs out
 - [Contact and support](https://spytrend.com/contact/): questions about connecting, access and accounts
 - [Privacy policy](https://spytrend.com/legal/privacy/)
 - [Terms of service](https://spytrend.com/legal/terms/)

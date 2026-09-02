@@ -72,4 +72,4 @@ been live since June 2026.
 - Usage is metered in tokens from a single balance, and you pay for delivered results only. The
   authoritative numbers always come from `get_usage`, which is free and answers from the server.
 
-[2.0.0]: https://github.com/cherlysch/spytrend-mcp/releases/tag/v2.0.0
+[2.0.0]: https://github.com/Spytrend/spytrend-mcp/releases/tag/v2.0.0

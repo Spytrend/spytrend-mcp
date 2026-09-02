@@ -203,8 +203,8 @@ Details, along with what the assistant sees when the balance runs out:
 | [docs/limits.md](docs/limits.md) | Credits, limits, plans, and what an error looks like |
 | [examples/](examples/) | Four recipes: what to ask, what comes back, how to read it |
 | [skills/](skills/) | Six ready-made workflows for Claude Code and Codex, with install steps and the shared contract |
-| `server.json` | Catalogue metadata, published to the official MCP registry |
-| `llms.txt` | A short machine-readable map of this connection for AI assistants |
+| [server.json](server.json) | Catalogue metadata, published to the official MCP registry |
+| [llms.txt](llms.txt) | A short machine-readable map of this connection for AI assistants |
 
 ---
 
