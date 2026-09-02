@@ -1,0 +1,13 @@
+interface:
+  display_name: "SpyTrend Vertical Intelligence"
+  short_description: "Map one ad market with verified rankings"
+  default_prompt: "Use $spytrend-vertical-intel to map ecommerce advertising in the United States."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "spytrend"
+      description: "SpyTrend advertising intelligence MCP server"
+      transport: "streamable_http"
+      url: "https://mcp.spytrend.com/mcp"
+policy:
+  allow_implicit_invocation: false
