@@ -16,6 +16,19 @@ decides which tools to call, and renders a report you can send on.
 
 ## Install
 
+**Claude Code (plugin, one command):**
+
+```text
+/plugin marketplace add Spytrend/spytrend-mcp
+/plugin install spytrend-mcp-skills@spytrend-mcp
+```
+
+**Any assistant via the skills installer** (Claude Code, Codex, Cursor, Copilot, Gemini CLI and 70+ more):
+
+```bash
+npx skills add Spytrend/spytrend-mcp
+```
+
 **Claude Code.** Copy the skill folders into your skills directory and start a new session:
 
 ```bash
@@ -25,8 +38,9 @@ cp -R skills/spytrend-* ~/.claude/skills/
 **Codex.** Each folder carries `agents/openai.yaml`; point Codex at the folder or copy it into your
 Codex skills directory.
 
-**Automatic discovery.** The server-side skills index is not currently available at a stable public URL; use the repository
-copy instructions above for deterministic installation.
+**Automatic discovery.** The server publishes the same pack at
+`https://mcp.spytrend.com/.well-known/agent-skills/index.json`; assistants that read that index pick
+the skills up without a copy step.
 
 ## What every skill follows
 
