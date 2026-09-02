@@ -149,8 +149,10 @@ the original word; the descriptions do not depend on it.
 Six ready-made workflows for Claude Code and Codex live in [skills/](skills/): map a vertical,
 profile an advertiser or the account behind a group of ads, review a website, search by keyword,
 discover shops. Each skill is a plain folder — copy it into your assistant's skills directory and ask
-in plain language; the skill decides which tools to call and renders a report. Install steps and
-the shared contract: [skills/README.md](skills/README.md).
+in plain language; the skill decides which tools to call and renders a report. Install steps and the
+shared contract: [skills/README.md](skills/README.md).
+
+One-command install: `/plugin marketplace add Spytrend/spytrend-mcp` then `/plugin install spytrend-mcp-skills@spytrend-mcp` for Claude Code; `npx skills add Spytrend/spytrend-mcp` for Claude Code, Codex, Cursor, Copilot, Gemini CLI and 70+ more.
 
 ---
 
