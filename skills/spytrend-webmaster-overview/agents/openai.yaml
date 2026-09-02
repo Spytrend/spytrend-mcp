@@ -1,0 +1,13 @@
+interface:
+  display_name: "SpyTrend Network Overview"
+  short_description: "Profile one advertising network safely"
+  default_prompt: "Use $spytrend-webmaster-overview to review the advertising network behind example.com."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "spytrend"
+      description: "SpyTrend advertising intelligence MCP server"
+      transport: "streamable_http"
+      url: "https://mcp.spytrend.com/mcp"
+policy:
+  allow_implicit_invocation: false
