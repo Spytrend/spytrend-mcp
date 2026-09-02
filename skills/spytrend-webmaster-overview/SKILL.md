@@ -24,8 +24,9 @@ name preserves the MCP entity name for routing; user-facing output says
 
 ## Bounded profile
 
-1. Render the returned domains, advertiser pages, pixels and countries with
-   their returned counts, caps and statuses. A missing inventory is unavailable,
+1. Render the returned domains, advertiser pages, the identifiers that tie ads
+   to one operator, and countries with their returned counts, caps and statuses.
+   A missing inventory is unavailable,
    not proof that no identifier exists.
 2. Present attribution edges as evidence of observed combinations. A small edge
    does not prove common ownership, and inherited identifiers do not describe
