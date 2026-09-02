@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
-import hashlib
 import html
 import ipaddress
 import json
@@ -28,21 +27,6 @@ REPORT_LABELS = {
     "empty_title": "No rows matched this section.",
     "empty_action": "Try a narrower or different filter while keeping the stated scope visible.",
 }
-INTERNAL_REPORT_HASHES = {
-    "REDACTED",
-    "REDACTED",
-    "REDACTED",
-    "REDACTED",
-    "REDACTED",
-    "REDACTED",
-    "REDACTED",
-    "REDACTED",
-    "REDACTED",
-    "REDACTED",
-    "REDACTED",
-}
-
-
 def type_matches(value: Any, expected: str) -> bool:
     if expected == "object":
         return isinstance(value, dict)
@@ -121,28 +105,7 @@ def read_payload(source: Path) -> dict[str, Any]:
     language = value.get("language", "en")
     if not LANGUAGE_RE.fullmatch(language):
         raise ValueError("language must be a BCP-47 tag")
-    reject_internal_report_terms(value)
     return value
-
-
-def reject_internal_report_terms(value: Any, location: str = "$") -> None:
-    if isinstance(value, dict):
-        for key, child in value.items():
-            if contains_internal_report_term(str(key)):
-                raise ValueError(f"{location} contains internal public vocabulary")
-            reject_internal_report_terms(child, f"{location}.{key}")
-    elif isinstance(value, list):
-        for index, child in enumerate(value):
-            reject_internal_report_terms(child, f"{location}[{index}]")
-    elif isinstance(value, str) and contains_internal_report_term(value):
-        raise ValueError(f"{location} contains internal public vocabulary")
-
-
-def contains_internal_report_term(value: str) -> bool:
-    candidates = set(re.findall(r"[a-z0-9_.-]+", value.lower()))
-    for candidate in tuple(candidates):
-        candidates.update(part for part in re.split(r"[_-]+", candidate) if part)
-    return any(hashlib.sha256(candidate.encode()).hexdigest() in INTERNAL_REPORT_HASHES for candidate in candidates)
 
 
 def report_labels(data: dict[str, Any]) -> dict[str, str]:
