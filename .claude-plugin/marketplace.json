@@ -1,0 +1,27 @@
+{
+    "name": "spytrend-mcp",
+    "owner": {
+          "name": "Spytrend",
+          "email": "collab@spytrend.com"
+    },
+    "metadata": {
+          "description": "Spytrend MCP server skills for advertising intelligence on Meta and TikTok.",
+          "version": "2.1.0"
+    },
+    "plugins": [
+          {
+                  "name": "spytrend-mcp-skills",
+                  "description": "Six Spytrend workflows for advertising intelligence, advertiser research, webmaster analysis, website review, keyword search, and shop discovery.",
+                  "source": "./",
+                  "strict": false,
+                  "skills": [
+                            "./skills/spytrend-vertical-intel",
+                            "./skills/spytrend-advertiser-overview",
+                            "./skills/spytrend-webmaster-overview",
+                            "./skills/spytrend-website-review",
+                            "./skills/spytrend-keyword-search",
+                            "./skills/spytrend-shop-discovery"
+                  ]
+          }
+    ]
+}
