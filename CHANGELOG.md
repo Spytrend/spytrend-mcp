@@ -1,3 +1,9 @@
+# Changelog
+
+All notable changes to this repository and to the published catalogue entry are recorded here.
+Versions follow [Semantic Versioning](https://semver.org/) and match the `version` field in
+`server.json`.
+
 ## [2.1.0] — skills pack 1.0.3 — 2026-09-05
 
 ### Changed
@@ -16,12 +22,6 @@
   `spytrend-website-review` bounds creative-reuse ranking and no longer presents the two
   reuse counters as part and whole; `spytrend-shop-discovery` explains an empty growth cut
   by snapshot freshness.
-
-# Changelog
-
-All notable changes to this repository and to the published catalogue entry are recorded here.
-Versions follow [Semantic Versioning](https://semver.org/) and match the `version` field in
-`server.json`.
 
 ## [2.1.0] — 2026-09-02
 
