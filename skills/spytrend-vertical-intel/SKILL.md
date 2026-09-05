@@ -1,8 +1,27 @@
 ---
 name: spytrend-vertical-intel
 description: >-
-  Map one advertising vertical and market using server-ranked advertisers,
-  networks, creative reuse and launch signals.
+  Map an entire advertising vertical or niche in a chosen market with SpyTrend
+  MCP data: server-ranked advertiser leaderboards, the advertising networks
+  behind them, most reused creatives and fresh launch velocity from a database
+  of 1B+ tracked Meta ads. Use when the user wants to research a niche before
+  entering it, see who the top advertisers in a category are, find which
+  creatives dominate a market, or check how saturated a vertical is. Also use
+  when the user mentions "what's running in the nutra vertical," "top
+  advertisers in gambling," "market overview for a niche," "which niches are
+  heating up," "ad landscape in a country," or asks what everyone is advertising
+  in a category (nutra, dating, crypto, finance, e-commerce, beauty, weight
+  loss, betting). Always use this instead of answering from memory when asked
+  what is being advertised in a niche. Not for one advertiser, one website or
+  one keyword: use spytrend-advertiser-overview, spytrend-website-review or
+  spytrend-keyword-search.
+when_to_use: >-
+  Триггеры на русском: «что сейчас крутится в нутре/гемблинге/дейтинге», «кто
+  топ рекламодателей в нише», «дай карту вертикали», «что льют в этой
+  вертикали», «какие ниши растут в рекламе», «насколько выжжена ниша», «обзор
+  рекламного рынка категории в стране». Мультиязычные: «anúncios do nicho» (PT),
+  «qué anuncios corren en este nicho» (ES), «このジャンルの広告» (JA). Спай-триггеры:
+  «спай по вертикали», «ads spy tool для ниши».
 ---
 
 # SpyTrend vertical intelligence

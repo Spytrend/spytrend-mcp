@@ -1,13 +1,13 @@
 interface:
   display_name: "SpyTrend Advertiser Overview"
-  short_description: "Profile ranked advertisers and their winners"
-  default_prompt: "Use $spytrend-advertiser-overview to profile ecommerce advertisers in the United States."
+  short_description: "Top advertisers in a market: winners, fresh ads, destinations"
+  default_prompt: "Use $spytrend-advertiser-overview to rank the top beauty advertisers in the US and profile their current winning ads."
 dependencies:
   tools:
     - type: "mcp"
       value: "spytrend"
-      description: "SpyTrend advertising intelligence MCP server"
+      description: "SpyTrend advertising analytics MCP server"
       transport: "streamable_http"
       url: "https://mcp.spytrend.com/mcp"
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true

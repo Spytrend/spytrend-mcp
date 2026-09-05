@@ -1,8 +1,26 @@
 ---
 name: spytrend-keyword-search
 description: >-
-  Analyze ads matching a keyword, with bounded market breakdowns and exact
-  creative reuse inside the selected result set.
+  Search and analyze ads matching a keyword or phrase with SpyTrend MCP data,
+  with country breakdowns and exact creative-reuse ranking inside the selection,
+  from a database of 1B+ tracked Meta ads. Works like an ad library search by
+  text when the user does not know who runs the ads. Use when the user wants to
+  find ads mentioning a product, brand, slogan or offer, pull ad examples for a
+  topic, or measure how many ads use a phrase by market. Also use when the user
+  mentions "facebook ads spy," "ad spy," "find ads with the word X," "ads
+  mentioning a brand," "search the ad library for a phrase," "ad examples for a
+  topic," "which ads use this slogan," "how many ads mention X," "break ads for
+  this query down by country," or "which creatives repeat across these ads." Not
+  for a whole vertical (use spytrend-vertical-intel), a known advertiser (use
+  spytrend-advertiser-overview) or a known domain (use spytrend-website-review).
+when_to_use: >-
+  Триггеры на русском: «найди объявления со словом…», «покажи рекламу, где
+  упоминается…», «поиск по библиотеке рекламы по ключу», «есть ли реклама с этим
+  слоганом», «какие объявления упоминают мой бренд», «разбей объявления по
+  странам», «какие креативы повторяются по этому ключу». Мультиязычные:
+  «biblioteca de anúncios» (PT), «buscar anuncios por palabra clave» (ES),
+  «広告ライブラリで検索» (JA), «meta ad library search» (EN/ID). Спай-триггеры: «спай
+  рекламы по ключу», «espiar anuncios» (ES).
 ---
 
 # SpyTrend keyword advertising search
@@ -21,7 +39,12 @@ Read `references/spytrend-contract.md` before making any data call.
 
 1. Call `search_ads` with the exact query, selected filters and an explicit small
    limit. Keep response order and date axis.
-2. When a market breakdown is requested, call `get_ads_analytics` with the same
+2. When a market breakdown is requested, bound the selection first: a free-text
+   query needs concrete `date_from`/`date_to` (a week or two is enough) on top of
+   the country. An open-ended text selection does not settle — its sections stay
+   `ready=false` no matter how many times the call is re-issued, and the advertised
+   `retry_after_seconds` will not change that. Say that the window was added and
+   why. Then call `get_ads_analytics` with the same
    query/country/category/date filters and an explicit
    `max_items_per_section`. If that tool is disabled or the account cannot use
    it, continue with the bounded ad rows and report the returned access state.

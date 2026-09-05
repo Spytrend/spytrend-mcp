@@ -1,8 +1,25 @@
 ---
 name: spytrend-website-review
 description: >-
-  Review one website's traffic snapshot, advertising footprint, advertiser
-  pages and leading creative material.
+  Review one website or store domain with SpyTrend MCP data: monthly traffic
+  estimate, advertising footprint over time, which advertiser pages run ads to
+  it and its leading creatives, from a database of 1B+ tracked Meta ads. Use
+  when the user gives a domain or URL and wants its traffic, whether and since
+  when it runs ads, who sends paid traffic to it, or how its ad volume changed
+  month by month. Also use when the user mentions "store spy," "does this site
+  run ads," "how much traffic does this store get," "check this domain: traffic,
+  ads, creatives," "competitor website traffic," "ads that lead to this domain,"
+  "is this store ad-driven or organic," or pastes a store link asking for
+  advertising research. Always use this instead of guessing when asked about a
+  specific site's ads or traffic. Not for discovering new stores (use
+  spytrend-shop-discovery), whole niches (use spytrend-vertical-intel) or the
+  operation behind the ads (use spytrend-webmaster-overview).
+when_to_use: >-
+  Триггеры на русском: «крутит ли домен рекламу», «сколько трафика у сайта»,
+  «проверь домен: трафик, объявления, креативы», «когда сайт начал крутить
+  рекламу», «сколько объявлений ведут на домен», «разбор рекламы по сайту
+  конкурента», «магазин попался в ленте — проверь трафик и рекламу».
+  Спай-триггеры: «спай магазина», «store spy».
 ---
 
 # SpyTrend website advertising review
@@ -44,6 +61,13 @@ Read `references/spytrend-contract.md` before making any data call.
    counters are unavailable, not zero.
 7. For website-scoped creative reuse, call `search_ads` again with the exact
    domain/country/date filters and `sort_by=most_reused_creative`, using a small
+   selection: on a high-volume domain this ranking exceeds the analytics deadline
+   and returns a timeout instead of rows. Always pair it with a concrete date
+   window, and add the selected country when the domain is large; widen only if
+   the bounded call returned rows. Report the bound you used. Also treat the
+   two reuse counters as separate measurements: when
+   `same_creative_ads_in_selection` exceeds `same_creative_ads_lifetime`, report
+   both as returned and do not present the pair as a subset relation.
    explicit limit. Its representative ads and selection reuse counts are the
    website-scoped ranking. Do not substitute a country-global
    `search_creatives` page or re-sort a bounded lifetime list.
