@@ -1,8 +1,26 @@
 ---
 name: spytrend-advertiser-overview
 description: >-
-  Rank advertiser pages in a selected market and profile their current winners,
-  fresh ads and destination coverage.
+  Rank the top advertiser pages in a chosen vertical and country and profile
+  each in depth with SpyTrend MCP data: current winning ads, freshly launched
+  ads, creatives and destination pages, from a database of 1B+ tracked Meta ads.
+  Use when the user wants to see who the biggest advertisers in a market are and
+  what they run, profile market leaders' current ads, check which pages have the
+  most active ads, or catch fresh launches from top pages. Also use when the
+  user mentions "spy on competitor ads," "top advertisers in a niche or
+  country," "biggest advertisers," "what are market leaders running,"
+  "longest-running ads," "profile the top pages," "whose ads dominate this geo,"
+  or "show the winners top advertisers run right now." Not for a whole-vertical
+  map with networks and creative rankings (use spytrend-vertical-intel), one
+  website (use spytrend-website-review) or a text search (use
+  spytrend-keyword-search).
+when_to_use: >-
+  Триггеры на русском: «кто крупнейшие рекламодатели и что они крутят», «топ
+  рекламных страниц рынка», «что крутят топовые рекламодатели», «у кого больше
+  всего активных объявлений», «свежие запуски лидеров», «чья реклама доминирует
+  в этом гео», «что крутится дольше всех у топов». Мультиязычные: «ver anuncios
+  de la competencia» (ES), «anúncios dos concorrentes» (PT), «競合の広告» (JA).
+  Спай-триггеры: «спай конкурента», «espiar anuncios de la competencia» (ES).
 ---
 
 # SpyTrend advertiser overview
@@ -44,10 +62,16 @@ pretending it answers the original question.
    slice/sort status says so; otherwise label it a bounded candidate sample.
    Country-specific examples come from the ad query below, not by weakening the
    advertiser creative slice.
-5. Call `search_ads` with the advertiser page id, selected `categories` and
-   `countries`, `status_today=active`, `sort_by=date`, `dedupe=true` and a small
-   explicit limit. A first-discovered date stays labeled as first discovered
-   unless the response supplies the platform launch date.
+5. Call `search_ads` with `page_id` set to the advertiser page id, the selected
+   `categories` and `countries`, `status_today=active`, `sort_by=date`,
+   `dedupe=true` and a small explicit limit. A first-discovered date stays
+   labeled as first discovered unless the response supplies the platform launch
+   date. Pass the page id in `page_id`, never in `advertiser_id`: that parameter
+   takes the internal advertiser UUID returned by `search_advertisers`, and a page
+   id placed there is ignored without an error — the call then answers for the
+   whole unfiltered market. If you hold the UUID instead, pass it in
+   `advertiser_id`. Before reporting, verify the binding: every returned row must
+   carry the identifier you filtered on.
 6. Use advertiser card data for exact page counters and destination coverage
    when the card carries no `card_status` field: a complete card does not emit
    it. When `card_status` is `building`, the card is a placeholder and its
