@@ -1,13 +1,13 @@
 interface:
   display_name: "SpyTrend Keyword Search"
-  short_description: "Analyze one ad keyword with exact coverage"
-  default_prompt: "Use $spytrend-keyword-search to analyze ads mentioning Shopify in the United States."
+  short_description: "Search Meta ads by keyword: examples, countries, creative reuse"
+  default_prompt: "Use $spytrend-keyword-search to find ads mentioning collagen in the United States and break them down by country."
 dependencies:
   tools:
     - type: "mcp"
       value: "spytrend"
-      description: "SpyTrend advertising intelligence MCP server"
+      description: "SpyTrend advertising analytics MCP server"
       transport: "streamable_http"
       url: "https://mcp.spytrend.com/mcp"
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true
