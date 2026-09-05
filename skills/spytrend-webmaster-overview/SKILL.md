@@ -1,8 +1,24 @@
 ---
 name: spytrend-webmaster-overview
 description: >-
-  Profile the advertising network behind a domain or network result, including
-  identifiers, geographies and reused creatives.
+  Profile the advertising network behind a domain or a group of ads with
+  SpyTrend MCP data: connected domains, advertiser pages, identifiers tying ads
+  to one operator, target countries and the creatives that operation reuses
+  most, from a database of 1B+ tracked Meta ads. Use when the user wants to know
+  who is behind a set of ads, see everything one operator or competitor runs
+  across pages and domains, or check whether identical ads on different pages
+  belong to one player. Also use when the user mentions "ads spy across pages,"
+  "who is behind these ads," "everything this operator runs," "same company
+  running ads across pages," "what other domains does this advertiser operate,"
+  "the whole operation," "network behind a landing domain," or "trace who
+  launched these ads." Not for ranking advertiser pages in a market (use
+  spytrend-advertiser-overview) and not for a website's traffic review (use
+  spytrend-website-review).
+when_to_use: >-
+  Триггеры на русском: «кто стоит за рекламой этого домена», «покажи всё, что
+  крутит этот игрок», «это одна контора льёт с разных страниц?», «какие ещё
+  домены у этого рекламодателя», «весь след того, кто крутит эти объявления»,
+  «вся связка страниц оператора».
 ---
 
 # SpyTrend advertising network overview
@@ -25,8 +41,7 @@ name preserves the MCP entity name for routing; user-facing output says
 ## Bounded profile
 
 1. Render the returned domains, advertiser pages, the identifiers that tie ads
-   to one operator, and countries with their returned counts, caps and statuses.
-   A missing inventory is unavailable,
+   to one operator, and countries with their returned counts, caps and statuses. A missing inventory is unavailable,
    not proof that no identifier exists.
 2. Present attribution edges as evidence of observed combinations. A small edge
    does not prove common ownership, and inherited identifiers do not describe
