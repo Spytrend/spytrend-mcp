@@ -1,8 +1,26 @@
 ---
 name: spytrend-shop-discovery
 description: >-
-  Discover store domains by traffic, growth and advertising activity, then
-  inspect a bounded set of leading stores.
+  Discover store domains by traffic, qualified growth and advertising activity
+  with SpyTrend MCP data, then inspect a bounded set of leading stores' ads and
+  advertisers, from a database of 1B+ tracked Meta ads. Use when the user wants
+  to find growing e-commerce or dropshipping stores, see which shops advertise
+  most in a niche or country, run product research through stores that are
+  taking off, or scout new stores that just started running heavy ads. Also use
+  when the user mentions "shop spy," "fast-growing Shopify stores," "trending
+  stores," "find winning products," "product research," "dropshipping stores
+  with the most traffic," "stores scaling their ads," "top stores by advertising
+  activity," or "which shops grew fastest." Not for one known domain (use
+  spytrend-website-review) and not for advertiser rankings without stores (use
+  spytrend-advertiser-overview).
+when_to_use: >-
+  Триггеры на русском: «найди быстрорастущие магазины», «какие магазины
+  масштабируют рекламу», «найди работающие товары через взлетающие магазины»,
+  «товарка: какие магазины взлетают», «дропшиппинг-магазины с наибольшим
+  трафиком», «топ магазинов по рекламной активности», «новые магазины с платным
+  трафиком». Мультиязычные: «produtos vencedores» (PT), «productos ganadores»
+  (ES), «лидеры товарки», «product research» (EN). Спай-триггеры: «спай
+  магазинов и товаров».
 ---
 
 # SpyTrend shop discovery
@@ -28,6 +46,12 @@ subdomains and label it.
 1. Call `search_shops` three times with the same filters and separate server
    sorts: traffic, qualified growth, and advertising activity. Never re-sort one
    bounded page to manufacture another cut.
+   The growth cut returns only stores whose growth estimate the service has
+   qualified, and that qualification depends on how fresh the traffic snapshot is.
+   When the cut comes back empty, say that no store currently qualifies and give
+   the snapshot month from `traffic_as_of` as the reason. Render the other two
+   cuts and continue. Never substitute a re-sorted traffic page for it, and never
+   report an empty qualified cut as "no growing stores".
 2. Apply the public quality fields returned by the service. Reject infrastructure
    and redirect surfaces. Preserve server order among admitted rows.
 3. If filtering leaves fewer rows than requested, page forward with the returned
