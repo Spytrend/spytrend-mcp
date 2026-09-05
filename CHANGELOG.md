@@ -1,3 +1,22 @@
+## [2.1.0] — skills pack 1.0.3 — 2026-09-05
+
+### Changed
+
+- `skills/` pack 1.0.3. Skill bodies, the contract, schemas and report templates are
+  unchanged since 1.0.2; only the surfaces an assistant uses to pick a skill were rewritten:
+  each `SKILL.md` description now states the result, the requests it covers and the
+  neighbouring skill to use instead, plus a `when_to_use` field with trigger phrases
+  (RU/PT/ES/JA). Codex descriptors (`agents/openai.yaml`) carry new short descriptions and
+  default prompts and now allow implicit invocation; the spend guard stays in `contract.md`
+  (`get_usage` preflight and confirmation before paid calls).
+- 1.0.2 (never published here) fixed four workflow defects found in a full run on the
+  production server on 2026-09-04: `spytrend-advertiser-overview` passes a Facebook page id
+  as `page_id` (not `advertiser_id`, which takes the internal id and ignored page ids
+  silently); `spytrend-keyword-search` bounds free-text analytics with a date window;
+  `spytrend-website-review` bounds creative-reuse ranking and no longer presents the two
+  reuse counters as part and whole; `spytrend-shop-discovery` explains an empty growth cut
+  by snapshot freshness.
+
 # Changelog
 
 All notable changes to this repository and to the published catalogue entry are recorded here.
