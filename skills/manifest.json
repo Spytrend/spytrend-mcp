@@ -1,12 +1,12 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.3",
   "contract": "contract.md",
   "skills": [
     {
       "name": "spytrend-vertical-intel",
       "prompt": "spytrend_vertical_intel",
       "title": "Vertical intelligence",
-      "description": "Map one advertising vertical and market using server-ranked advertisers, networks, creative reuse and launch signals.",
+      "description": "Map an entire advertising vertical or niche in a chosen market with SpyTrend MCP data: server-ranked advertiser leaderboards, the advertising networks behind them, most reused creatives and fresh launch velocity from a database of 1B+ tracked Meta ads. Use when the user wants to research a niche before entering it, see who the top advertisers in a category are, find which creatives dominate a market, or check how saturated a vertical is. Also use when the user mentions \"what's running in the nutra vertical,\" \"top advertisers in gambling,\" \"market overview for a niche,\" \"which niches are heating up,\" \"ad landscape in a country,\" or asks what everyone is advertising in a category (nutra, dating, crypto, finance, e-commerce, beauty, weight loss, betting). Always use this instead of answering from memory when asked what is being advertised in a niche. Not for one advertiser, one website or one keyword: use spytrend-advertiser-overview, spytrend-website-review or spytrend-keyword-search.",
       "input_schema": "schemas/vertical-intel.input.json",
       "tools": [
         {"name": "get_usage", "response_fields": ["remaining"]},
@@ -30,7 +30,7 @@
       "name": "spytrend-advertiser-overview",
       "prompt": "spytrend_advertiser_overview",
       "title": "Advertiser overview",
-      "description": "Rank advertiser pages in a selected market and profile their current winners, fresh ads and destination coverage.",
+      "description": "Rank the top advertiser pages in a chosen vertical and country and profile each in depth with SpyTrend MCP data: current winning ads, freshly launched ads, creatives and destination pages, from a database of 1B+ tracked Meta ads. Use when the user wants to see who the biggest advertisers in a market are and what they run, profile market leaders' current ads, check which pages have the most active ads, or catch fresh launches from top pages. Also use when the user mentions \"spy on competitor ads,\" \"top advertisers in a niche or country,\" \"biggest advertisers,\" \"what are market leaders running,\" \"longest-running ads,\" \"profile the top pages,\" \"whose ads dominate this geo,\" or \"show the winners top advertisers run right now.\" Not for a whole-vertical map with networks and creative rankings (use spytrend-vertical-intel), one website (use spytrend-website-review) or a text search (use spytrend-keyword-search).",
       "input_schema": "schemas/advertiser-overview.input.json",
       "tools": [
         {"name": "get_usage", "response_fields": ["remaining"]},
@@ -53,7 +53,7 @@
       "name": "spytrend-webmaster-overview",
       "prompt": "spytrend_webmaster_overview",
       "title": "Advertising network overview",
-      "description": "Profile the advertising network behind a domain or network result, including identifiers, geographies and reused creatives.",
+      "description": "Profile the advertising network behind a domain or a group of ads with SpyTrend MCP data: connected domains, advertiser pages, identifiers tying ads to one operator, target countries and the creatives that operation reuses most, from a database of 1B+ tracked Meta ads. Use when the user wants to know who is behind a set of ads, see everything one operator or competitor runs across pages and domains, or check whether identical ads on different pages belong to one player. Also use when the user mentions \"ads spy across pages,\" \"who is behind these ads,\" \"everything this operator runs,\" \"same company running ads across pages,\" \"what other domains does this advertiser operate,\" \"the whole operation,\" \"network behind a landing domain,\" or \"trace who launched these ads.\" Not for ranking advertiser pages in a market (use spytrend-advertiser-overview) and not for a website's traffic review (use spytrend-website-review).",
       "input_schema": "schemas/webmaster-overview.input.json",
       "tools": [
         {"name": "get_usage", "response_fields": ["remaining"]},
@@ -76,7 +76,7 @@
       "name": "spytrend-website-review",
       "prompt": "spytrend_website_review",
       "title": "Website advertising review",
-      "description": "Review one website's traffic snapshot, advertising footprint, advertiser pages and leading creative material.",
+      "description": "Review one website or store domain with SpyTrend MCP data: monthly traffic estimate, advertising footprint over time, which advertiser pages run ads to it and its leading creatives, from a database of 1B+ tracked Meta ads. Use when the user gives a domain or URL and wants its traffic, whether and since when it runs ads, who sends paid traffic to it, or how its ad volume changed month by month. Also use when the user mentions \"store spy,\" \"does this site run ads,\" \"how much traffic does this store get,\" \"check this domain: traffic, ads, creatives,\" \"competitor website traffic,\" \"ads that lead to this domain,\" \"is this store ad-driven or organic,\" or pastes a store link asking for advertising research. Always use this instead of guessing when asked about a specific site's ads or traffic. Not for discovering new stores (use spytrend-shop-discovery), whole niches (use spytrend-vertical-intel) or the operation behind the ads (use spytrend-webmaster-overview).",
       "input_schema": "schemas/website-review.input.json",
       "tools": [
         {"name": "get_usage", "response_fields": ["remaining"]},
@@ -101,7 +101,7 @@
       "name": "spytrend-keyword-search",
       "prompt": "spytrend_keyword_search",
       "title": "Keyword advertising search",
-      "description": "Analyze ads matching a keyword, with bounded market breakdowns and exact creative reuse inside the selected result set.",
+      "description": "Search and analyze ads matching a keyword or phrase with SpyTrend MCP data, with country breakdowns and exact creative-reuse ranking inside the selection, from a database of 1B+ tracked Meta ads. Works like an ad library search by text when the user does not know who runs the ads. Use when the user wants to find ads mentioning a product, brand, slogan or offer, pull ad examples for a topic, or measure how many ads use a phrase by market. Also use when the user mentions \"facebook ads spy,\" \"ad spy,\" \"find ads with the word X,\" \"ads mentioning a brand,\" \"search the ad library for a phrase,\" \"ad examples for a topic,\" \"which ads use this slogan,\" \"how many ads mention X,\" \"break ads for this query down by country,\" or \"which creatives repeat across these ads.\" Not for a whole vertical (use spytrend-vertical-intel), a known advertiser (use spytrend-advertiser-overview) or a known domain (use spytrend-website-review).",
       "input_schema": "schemas/keyword-search.input.json",
       "tools": [
         {"name": "get_usage", "response_fields": ["remaining"]},
@@ -124,7 +124,7 @@
       "name": "spytrend-shop-discovery",
       "prompt": "spytrend_shop_discovery",
       "title": "Shop discovery",
-      "description": "Discover store domains by traffic, growth and advertising activity, then inspect a bounded set of leading stores.",
+      "description": "Discover store domains by traffic, qualified growth and advertising activity with SpyTrend MCP data, then inspect a bounded set of leading stores' ads and advertisers, from a database of 1B+ tracked Meta ads. Use when the user wants to find growing e-commerce or dropshipping stores, see which shops advertise most in a niche or country, run product research through stores that are taking off, or scout new stores that just started running heavy ads. Also use when the user mentions \"shop spy,\" \"fast-growing Shopify stores,\" \"trending stores,\" \"find winning products,\" \"product research,\" \"dropshipping stores with the most traffic,\" \"stores scaling their ads,\" \"top stores by advertising activity,\" or \"which shops grew fastest.\" Not for one known domain (use spytrend-website-review) and not for advertiser rankings without stores (use spytrend-advertiser-overview).",
       "input_schema": "schemas/shop-discovery.input.json",
       "tools": [
         {"name": "get_usage", "response_fields": ["remaining"]},
