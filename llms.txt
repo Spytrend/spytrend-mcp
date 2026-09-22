@@ -21,7 +21,7 @@ everything at once.
 
 ## Connect
 
-- [Connection page](https://spytrend.com/mcp/): endpoint, sign-in and per-client setup
+- [Connection page](https://spytrend.com/mcp/?utm_source=github&utm_medium=repo&utm_campaign=mcp-launch): endpoint, sign-in and per-client setup
 - [Quickstart](https://github.com/Spytrend/spytrend-mcp/blob/main/docs/quickstart.md): connecting in five minutes, per client
 - [Repository](https://github.com/Spytrend/spytrend-mcp): connection passport, tool reference and recipes
 
@@ -50,7 +50,7 @@ everything at once.
 
 ## Product
 
-- [Plans](https://spytrend.com/pricing/): Starter free, Pro, Team, Enterprise
+- [Plans](https://spytrend.com/pricing/?utm_source=github&utm_medium=repo&utm_campaign=mcp-launch): Starter free, Pro, Team, Enterprise
 - [Limits and tokens](https://github.com/Spytrend/spytrend-mcp/blob/main/docs/limits.md): what each call costs, what is free, what the assistant sees when the balance runs out
 - [Contact and support](https://spytrend.com/contact/): questions about connecting, access and accounts
 - [Privacy policy](https://spytrend.com/legal/privacy/)
@@ -58,4 +58,4 @@ everything at once.
 
 ## Optional
 
-- [Blog](https://spytrend.com/blog): background reading
+- [Blog](https://spytrend.com/blog?utm_source=github&utm_medium=repo&utm_campaign=mcp-launch): background reading

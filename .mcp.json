@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "spytrend": {
+      "type": "http",
+      "url": "https://mcp.spytrend.com/mcp"
+    }
+  }
+}

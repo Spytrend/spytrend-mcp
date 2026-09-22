@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "spytrend-mcp-skills",
+  "version": "1.0.3",
+  "description": "Six ready-made Spytrend workflows for advertising research on Meta and TikTok: vertical intelligence, advertiser overview, ad-network overview, website review, keyword search and shop discovery.",
+  "author": {
+    "name": "Spytrend",
+    "email": "collab@spytrend.com",
+    "url": "https://spytrend.com"
+  },
+  "homepage": "https://spytrend.com/mcp/?utm_source=agent-plugins&utm_medium=plugin&utm_campaign=mcp-launch",
+  "repository": "https://github.com/Spytrend/spytrend-mcp",
+  "license": "MIT",
+  "keywords": [
+    "advertising",
+    "ad-analytics",
+    "competitive-analysis",
+    "meta-ads",
+    "facebook-ads",
+    "tiktok-ads",
+    "creative-analysis",
+    "marketing-analytics"
+  ]
+}

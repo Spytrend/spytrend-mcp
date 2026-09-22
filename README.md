@@ -36,7 +36,7 @@ https://mcp.spytrend.com/mcp
 **Sign-in:** your Spytrend account, in the browser. No API key, no token to paste.
 
 **Where to find it in your account:** Settings → AI / MCP, or the connection page at
-<https://spytrend.com/mcp/>.
+<https://spytrend.com/mcp/?utm_source=github&utm_medium=repo&utm_campaign=mcp-launch>.
 
 Three steps, whichever client you use:
 
@@ -189,7 +189,7 @@ The connection works on every plan, including the free one. **On the free Starte
 limited to the archive — nothing from the last 90 days.** Fresh advertising is what the paid plans
 provide; it is the same boundary as the free tier on the site. Your assistant can always ask
 `get_usage` — it is free and it answers from the server itself. Current pricing:
-<https://spytrend.com/pricing/>
+<https://spytrend.com/pricing/?utm_source=github&utm_medium=repo&utm_campaign=mcp-launch>
 
 Details, along with what the assistant sees when the balance runs out:
 **[docs/limits.md](docs/limits.md)**.
