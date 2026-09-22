@@ -58,7 +58,7 @@ this page:
 
 > How many tokens do I have left, and what does each call cost?
 
-Current pricing: <https://spytrend.com/pricing/>
+Current pricing: <https://spytrend.com/pricing/?utm_source=github&utm_medium=repo&utm_campaign=mcp-launch>
 
 ---
 
@@ -71,7 +71,7 @@ just saying the call failed.
 | What happened | What you see | What to do |
 |---|---|---|
 | You are not signed in, or the sign-in has expired | The assistant says it needs you to sign in again | Reconnect the connector in your client. Nothing is lost |
-| Your balance has run out | The assistant tells you the balance is not enough and what the call would have cost | Top up at <https://spytrend.com/pricing/>, or ask for fewer rows |
+| Your balance has run out | The assistant tells you the balance is not enough and what the call would have cost | Top up at <https://spytrend.com/pricing/?utm_source=github&utm_medium=repo&utm_campaign=mcp-launch>, or ask for fewer rows |
 | Nothing matched | The assistant says there is nothing for that request | Widen it: fewer filters, a broader category, a longer date range |
 | The request could not be understood | The assistant says a value was not valid and which one | Rephrase the country or category and ask again |
 

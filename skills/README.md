@@ -42,6 +42,12 @@ Codex skills directory.
 `https://mcp.spytrend.com/.well-known/agent-skills/index.json`; assistants that read that index pick
 the skills up without a copy step.
 
+**The skills call the Spytrend MCP server — connect it too.** The plugin route wires the server
+for you. If you installed the skills with `npx skills add` or by copying the folders, add the
+server separately: point your client at `https://mcp.spytrend.com/mcp` and sign in with your
+Spytrend account in the browser. Full per-client instructions are in the
+[repository README](../README.md#connect).
+
 ## What every skill follows
 
 [`contract.md`](contract.md) is the shared contract: how arguments are read, how cost is checked with

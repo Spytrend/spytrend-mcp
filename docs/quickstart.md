@@ -8,7 +8,7 @@ https://mcp.spytrend.com/mcp
 
 There is nothing to install and no key to paste. You sign in through the browser with your Spytrend
 account — the same one you use on the site. If you do not have one yet, create it at
-<https://spytrend.com/> first; the free plan is enough to try the connection.
+<https://spytrend.com/?utm_source=github&utm_medium=repo&utm_campaign=mcp-launch> first; the free plan is enough to try the connection.
 
 Pick your client below.
 
@@ -113,14 +113,14 @@ you added while they were running.
 
 **The sign-in window opens and immediately closes, and nothing is connected.**
 You are probably signed in to a different Spytrend account in that browser, or to none. Open
-<https://spytrend.com/> in the same browser, sign in there, then retry the connection.
+<https://spytrend.com/?utm_source=github&utm_medium=repo&utm_campaign=mcp-launch> in the same browser, sign in there, then retry the connection.
 
 **A tool call comes back saying you need to sign in.**
 Sign-ins expire. Reconnect the connector; you will not lose anything.
 
 **A call comes back saying the balance is not enough.**
 That is a plan matter, not a fault — the assistant should say so rather than retry. Ask it to check
-your balance, then either ask for fewer rows or top up at <https://spytrend.com/pricing/>. See
+your balance, then either ask for fewer rows or top up at <https://spytrend.com/pricing/?utm_source=github&utm_medium=repo&utm_campaign=mcp-launch>. See
 [docs/limits.md](limits.md).
 
 **The client rejects the URL.**
