@@ -46,6 +46,8 @@ Three steps, whichever client you use:
 
 Per-client instructions: **[docs/quickstart.md](docs/quickstart.md)**.
 
+One-click install: [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Server-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=spytrend&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.spytrend.com%2Fmcp%22%7D)
+
 <details>
 <summary><b>Claude</b> — desktop, CLI and web</summary>
 

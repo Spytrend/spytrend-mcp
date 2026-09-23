@@ -1,0 +1,10 @@
+{
+  "name": "spytrend",
+  "version": "2.1.0",
+  "description": "Spytrend MCP: Meta and TikTok ad analytics. Search ads and creatives, find the advertisers behind them, and rank what is scaling.",
+  "mcpServers": {
+    "spytrend": {
+      "httpUrl": "https://mcp.spytrend.com/mcp"
+    }
+  }
+}
