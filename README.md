@@ -158,6 +158,18 @@ One-command install: `/plugin marketplace add Spytrend/spytrend-mcp` then `/plug
 
 ---
 
+## Scenario adapters
+
+Smaller stdio adapters over this same hosted server, each exposing one research scenario with
+its own tool names. Use them when an assistant should only see one slice of the catalog.
+
+- [facebook-ads-library-mcp](https://github.com/Spytrend/facebook-ads-library-mcp) — Meta / Facebook ads library search, source pinned to Meta.
+- [tiktok-ads-library-mcp](https://github.com/Spytrend/tiktok-ads-library-mcp) — TikTok ad research, source pinned to TikTok (Pro plan).
+
+All adapters connect to `https://mcp.spytrend.com/mcp` and share the same account, plan and tokens.
+
+---
+
 ## Recipes
 
 These are the things people ask their assistant on day one. Type the request in your own words — the
