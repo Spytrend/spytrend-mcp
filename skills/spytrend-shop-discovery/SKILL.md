@@ -6,21 +6,13 @@ description: >-
   advertisers, from a database of 1B+ tracked Meta ads. Use when the user wants
   to find growing e-commerce or dropshipping stores, see which shops advertise
   most in a niche or country, run product research through stores that are
-  taking off, or scout new stores that just started running heavy ads. Also use
-  when the user mentions "shop spy," "fast-growing Shopify stores," "trending
-  stores," "find winning products," "product research," "dropshipping stores
-  with the most traffic," "stores scaling their ads," "top stores by advertising
-  activity," or "which shops grew fastest." Not for one known domain (use
-  spytrend-website-review) and not for advertiser rankings without stores (use
-  spytrend-advertiser-overview).
-when_to_use: >-
-  Триггеры на русском: «найди быстрорастущие магазины», «какие магазины
-  масштабируют рекламу», «найди работающие товары через взлетающие магазины»,
-  «товарка: какие магазины взлетают», «дропшиппинг-магазины с наибольшим
-  трафиком», «топ магазинов по рекламной активности», «новые магазины с платным
-  трафиком». Мультиязычные: «produtos vencedores» (PT), «productos ganadores»
-  (ES), «лидеры товарки», «product research» (EN). Спай-триггеры: «спай
-  магазинов и товаров».
+  taking off, or scout new stores that just started running heavy ads. Triggers:
+  "shop spy", "fast-growing Shopify stores", "find winning products", "product
+  research", "stores scaling their ads"; RU «найди быстрорастущие магазины»,
+  «товарка: какие магазины взлетают», «спай магазинов и товаров»; ES «productos
+  ganadores»; PT «produtos vencedores». Not for one known domain (use spytrend-
+  website-review) and not for advertiser rankings without stores (use spytrend-
+  advertiser-overview).
 ---
 
 # SpyTrend shop discovery

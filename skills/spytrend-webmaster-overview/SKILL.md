@@ -7,18 +7,12 @@ description: >-
   most, from a database of 1B+ tracked Meta ads. Use when the user wants to know
   who is behind a set of ads, see everything one operator or competitor runs
   across pages and domains, or check whether identical ads on different pages
-  belong to one player. Also use when the user mentions "ads spy across pages,"
-  "who is behind these ads," "everything this operator runs," "same company
-  running ads across pages," "what other domains does this advertiser operate,"
-  "the whole operation," "network behind a landing domain," or "trace who
-  launched these ads." Not for ranking advertiser pages in a market (use
-  spytrend-advertiser-overview) and not for a website's traffic review (use
-  spytrend-website-review).
-when_to_use: >-
-  Триггеры на русском: «кто стоит за рекламой этого домена», «покажи всё, что
-  крутит этот игрок», «это одна контора льёт с разных страниц?», «какие ещё
-  домены у этого рекламодателя», «весь след того, кто крутит эти объявления»,
-  «вся связка страниц оператора».
+  belong to one player. Triggers: "ads spy across pages", "who is behind these
+  ads", "everything this operator runs", "the whole operation", "network behind
+  a landing domain"; RU «кто стоит за рекламой этого домена», «какие ещё домены
+  у этого рекламодателя», «вся связка страниц оператора». Not for ranking
+  advertiser pages in a market (use spytrend-advertiser-overview) and not for a
+  website's traffic review (use spytrend-website-review).
 ---
 
 # SpyTrend advertising network overview

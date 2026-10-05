@@ -6,20 +6,13 @@ description: >-
   it and its leading creatives, from a database of 1B+ tracked Meta ads. Use
   when the user gives a domain or URL and wants its traffic, whether and since
   when it runs ads, who sends paid traffic to it, or how its ad volume changed
-  month by month. Also use when the user mentions "store spy," "does this site
-  run ads," "how much traffic does this store get," "check this domain: traffic,
-  ads, creatives," "competitor website traffic," "ads that lead to this domain,"
-  "is this store ad-driven or organic," or pastes a store link asking for
-  advertising research. Always use this instead of guessing when asked about a
-  specific site's ads or traffic. Not for discovering new stores (use
-  spytrend-shop-discovery), whole niches (use spytrend-vertical-intel) or the
-  operation behind the ads (use spytrend-webmaster-overview).
-when_to_use: >-
-  Триггеры на русском: «крутит ли домен рекламу», «сколько трафика у сайта»,
-  «проверь домен: трафик, объявления, креативы», «когда сайт начал крутить
-  рекламу», «сколько объявлений ведут на домен», «разбор рекламы по сайту
-  конкурента», «магазин попался в ленте — проверь трафик и рекламу».
-  Спай-триггеры: «спай магазина», «store spy».
+  month by month. Triggers: "store spy", "does this site run ads", "how much
+  traffic does this store get", "check this domain: traffic, ads, creatives",
+  "competitor website traffic"; RU «крутит ли домен рекламу», «сколько трафика у
+  сайта», «спай магазина». Use this instead of guessing about a specific site's
+  ads or traffic. Not for discovering new stores (use spytrend-shop-discovery),
+  whole niches (use spytrend-vertical-intel) or the operation behind the ads
+  (use spytrend-webmaster-overview).
 ---
 
 # SpyTrend website advertising review

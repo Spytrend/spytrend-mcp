@@ -6,21 +6,14 @@ description: >-
   ads, creatives and destination pages, from a database of 1B+ tracked Meta ads.
   Use when the user wants to see who the biggest advertisers in a market are and
   what they run, profile market leaders' current ads, check which pages have the
-  most active ads, or catch fresh launches from top pages. Also use when the
-  user mentions "spy on competitor ads," "top advertisers in a niche or
-  country," "biggest advertisers," "what are market leaders running,"
-  "longest-running ads," "profile the top pages," "whose ads dominate this geo,"
-  or "show the winners top advertisers run right now." Not for a whole-vertical
-  map with networks and creative rankings (use spytrend-vertical-intel), one
-  website (use spytrend-website-review) or a text search (use
-  spytrend-keyword-search).
-when_to_use: >-
-  Триггеры на русском: «кто крупнейшие рекламодатели и что они крутят», «топ
-  рекламных страниц рынка», «что крутят топовые рекламодатели», «у кого больше
-  всего активных объявлений», «свежие запуски лидеров», «чья реклама доминирует
-  в этом гео», «что крутится дольше всех у топов». Мультиязычные: «ver anuncios
-  de la competencia» (ES), «anúncios dos concorrentes» (PT), «競合の広告» (JA).
-  Спай-триггеры: «спай конкурента», «espiar anuncios de la competencia» (ES).
+  most active ads, or catch fresh launches from top pages. Triggers: "spy on
+  competitor ads", "top advertisers in a niche or country", "biggest
+  advertisers", "longest-running ads", "whose ads dominate this geo"; RU «кто
+  крупнейшие рекламодатели и что они крутят», «топ рекламных страниц рынка»,
+  «спай конкурента»; ES «espiar anuncios de la competencia»; PT «anúncios dos
+  concorrentes»; JA «競合の広告». Not for a whole-vertical map (use spytrend-
+  vertical-intel), one website (use spytrend-website-review) or a text search
+  (use spytrend-keyword-search).
 ---
 
 # SpyTrend advertiser overview
