@@ -6,21 +6,13 @@ description: >-
   from a database of 1B+ tracked Meta ads. Works like an ad library search by
   text when the user does not know who runs the ads. Use when the user wants to
   find ads mentioning a product, brand, slogan or offer, pull ad examples for a
-  topic, or measure how many ads use a phrase by market. Also use when the user
-  mentions "facebook ads spy," "ad spy," "find ads with the word X," "ads
-  mentioning a brand," "search the ad library for a phrase," "ad examples for a
-  topic," "which ads use this slogan," "how many ads mention X," "break ads for
-  this query down by country," or "which creatives repeat across these ads." Not
-  for a whole vertical (use spytrend-vertical-intel), a known advertiser (use
+  topic, or measure how many ads use a phrase by market. Triggers: "facebook ads
+  spy", "ad spy", "find ads with the word X", "search the ad library for a
+  phrase", "which ads use this slogan"; RU «найди объявления со словом…», «поиск
+  по библиотеке рекламы по ключу», «спай рекламы по ключу»; ES «buscar anuncios
+  por palabra clave»; PT «biblioteca de anúncios»; JA «広告ライブラリで検索». Not for a
+  whole vertical (use spytrend-vertical-intel), a known advertiser (use
   spytrend-advertiser-overview) or a known domain (use spytrend-website-review).
-when_to_use: >-
-  Триггеры на русском: «найди объявления со словом…», «покажи рекламу, где
-  упоминается…», «поиск по библиотеке рекламы по ключу», «есть ли реклама с этим
-  слоганом», «какие объявления упоминают мой бренд», «разбей объявления по
-  странам», «какие креативы повторяются по этому ключу». Мультиязычные:
-  «biblioteca de anúncios» (PT), «buscar anuncios por palabra clave» (ES),
-  «広告ライブラリで検索» (JA), «meta ad library search» (EN/ID). Спай-триггеры: «спай
-  рекламы по ключу», «espiar anuncios» (ES).
 ---
 
 # SpyTrend keyword advertising search
