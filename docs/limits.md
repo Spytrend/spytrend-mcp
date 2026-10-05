@@ -22,12 +22,18 @@ The free Starter plan comes with **500 tokens that do not expire**. Every paid p
 | A row of rankings | 1 token per row |
 | One advertiser, account, creative, destination or shop opened in full | 1 token |
 | One ad opened in full (it brings the material with it) | 1 token |
+| One multilang-upload ad opened in full (`get_ad`) or its media downloaded (`get_media`) | 50 tokens per ad, per new call |
 | Downloading an image or video file | 1 per ad · 10 per creative |
 | Saving an ad to a folder · saving a creative | 1 · 10 |
 | A row from the TikTok corpus (`source=tiktok`, Pro and above) | 100 tokens |
 | Checking your balance | Free |
 | Listing your folders | Free |
 | The catalogue of destinations, and asking on what grounds two accounts look alike | Free |
+
+**Opening a multilang-upload ad costs 50 tokens, not 1.** The 50 tokens are per ad, per new call, and
+include the primary creative and all available slides (not 50 per slide); an ordinary ad opened in full
+stays at 1 token. If the selected primary media is unavailable, that is not charged. Search rows show
+the opening price (`opening_price`) before you open an ad.
 
 **Page size is the thing to watch.** A search returns 20 rows unless you ask for more, and never
 more than 200. Twenty rows is twenty tokens — so a plan of 40,000 is roughly two thousand ordinary
