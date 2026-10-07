@@ -170,6 +170,18 @@ All adapters connect to `https://mcp.spytrend.com/mcp` and share the same accoun
 
 ---
 
+## Community
+
+Built by the community — not maintained by the Spytrend team:
+
+- [dvygolov/spytrend-cli](https://github.com/dvygolov/spytrend-cli) by Daniel Vygolov — a standalone
+  Python CLI and a drop-in agent skill that call this server over Streamable HTTP with OAuth2
+  client credentials, for agents and scripts that run without an MCP host.
+
+Built something on top of Spytrend MCP? Open an issue with a link and we will add it here.
+
+---
+
 ## Recipes
 
 These are the things people ask their assistant on day one. Type the request in your own words — the
