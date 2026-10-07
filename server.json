@@ -2,9 +2,9 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.spytrend/spytrend",
   "title": "Spytrend",
-  "description": "Meta and TikTok advertising analytics with ads, creatives, advertisers, rankings and six workflows.",
-  "version": "2.1.0",
-  "websiteUrl": "https://spytrend.com/mcp/",
+  "description": "Analytics, advertising: Facebook/Meta, TikTok, competitor ads. Free plan; Spytrend OAuth in browser",
+  "version": "2.1.1",
+  "websiteUrl": "https://spytrend.com/mcp/?utm_source=mcp-registry&utm_medium=directory&utm_campaign=mcp-launch",
   "icons": [
     {
       "src": "https://spytrend.com/apple-touch-icon.png",
