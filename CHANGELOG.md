@@ -4,6 +4,45 @@ All notable changes to this repository and to the published catalogue entry are 
 Versions follow [Semantic Versioning](https://semver.org/) and match the `version` field in
 `server.json`.
 
+## [Unreleased] — skills pack 1.1.0 — 2026-10-19
+
+### Added
+
+- **Startups.** `docs/tools.md` gains a Startups section documenting all sixteen Startups tools —
+  `search_startups`, `get_startup`, `compare_startups`, `lookup_startup`, `enrich_startups`,
+  `search_funding_rounds`, `search_investors`, `get_investor`, `search_startup_news`,
+  `get_startup_ads`, `get_startup_ads_growth`, `create_company_report`, `retry_company_report`,
+  `cancel_company_report`, `list_company_reports`, `get_company_report` — plus
+  `estimate_cost`, the free pre-call price check. Each entry says what the tool does, when to use it
+  and when not, what comes back and what it costs in Startups objects.
+- `docs/limits.md`: a Startups objects section — the Startups Business plan, 1 object per row and 5
+  per company card, 25,000 objects a month per subscription, at most 20 results per call, 60 calls a
+  minute, the paging pause, and the matching refusals.
+- `skills/spytrend-startup-research` — the seventh workflow: profile a company, compare 2 to 4
+  companies, find a company outside the catalogue, or read the user's own company reports. Every
+  paid call is priced with `estimate_cost` first and the price is told to the user; a missing figure
+  is reported as unknown, never as zero.
+- **Company report ordering.** `create_company_report` (1 company, or a comparison of 2 to 4),
+  `retry_company_report` and `cancel_company_report`. Ordering takes 1 report from the monthly
+  company-report allowance (5 on Startups Business, shared by the team) and no objects; when the
+  allowance is used up the order is refused with the price of a paid report (150 balance tokens per
+  company); it is paid from the balance only when the user agrees and the assistant passes `allow_paid`. `estimate_cost`
+  tells how many reports remain. The startup-research skill gains an `order_report` mode.
+
+### Changed
+
+- `skills/` pack 1.1.0 (`skills/manifest.json`, `plugin.json`, `.claude-plugin/plugin.json`). The six
+  existing skills are unchanged.
+- `.claude-plugin/marketplace.json` and `gemini-extension.json` 2.2.0; descriptions mention the
+  startup workflow.
+- README, `llms.txt`, `docs/quickstart.md` and `skills/README.md` mention the Startups tools and
+  the seventh skill.
+
+### Notes
+
+- `server.json` stays at 2.1.1, the version of the published registry record. It is bumped when the
+  next record is published, because a published registry version cannot change.
+
 ## [2.1.0] — skills pack 1.0.3 — 2026-09-05
 
 ### Changed

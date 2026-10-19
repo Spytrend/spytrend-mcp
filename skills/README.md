@@ -1,6 +1,6 @@
 # Spytrend skills
 
-Six ready-made workflows for AI assistants that are connected to the Spytrend MCP server. A skill is
+Seven ready-made workflows for AI assistants that are connected to the Spytrend MCP server. A skill is
 a plain folder: `SKILL.md` tells the assistant when the workflow applies and how to run it, `agents/`
 carries the Codex descriptor, `references/` holds the report template. The assistant reads the skill,
 decides which tools to call, and renders a report you can send on.
@@ -13,6 +13,7 @@ decides which tools to call, and renders a report you can send on.
 | `spytrend-website-review` | review a website as a traffic surface: who sends traffic to it and how it is advertised |
 | `spytrend-keyword-search` | find what is advertised for a keyword in a market and read the result as a report |
 | `spytrend-shop-discovery` | discover shops in a niche and market with their traffic and advertising signals |
+| `spytrend-startup-research` | profile a funded company, compare 2 to 4 companies, find a company outside the catalogue, or order and read your own company reports (Startups Business plan; billed in Startups objects, priced with the free `estimate_cost` first) |
 
 ## Install
 
