@@ -1,0 +1,13 @@
+interface:
+  display_name: "Spytrend Startup Research"
+  short_description: "Company profiles, 2-4 company comparisons and company reports"
+  default_prompt: "Use $spytrend-startup-research to profile example.com: funding rounds, investors, traction and ads."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "spytrend"
+      description: "SpyTrend advertising analytics MCP server"
+      transport: "streamable_http"
+      url: "https://mcp.spytrend.com/mcp"
+policy:
+  allow_implicit_invocation: true
