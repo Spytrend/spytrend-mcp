@@ -34,8 +34,7 @@ everything at once.
 - Rankings: `get_trends`
 - Look-alikes: `find_similar_ads`, `find_similar_creatives`, `find_similar_webmasters`, `get_webmaster_similarity_facets`
 - Folders and balance: `add_to_favorites`, `list_favorites`, `get_usage`
-- Twenty-one advertising tools. Costs are in the tool reference; `get_usage` always answers from the server.
-- Startups (Startups Business plan, billed in Startups objects, not tokens): `search_startups`, `get_startup`, `compare_startups`, `lookup_startup`, `enrich_startups`, `search_funding_rounds`, `search_investors`, `get_investor`, `search_startup_news`, `get_startup_ads`, `get_startup_ads_growth`, `create_company_report`, `retry_company_report`, `cancel_company_report`, `list_company_reports`, `get_company_report`. 1 object per row, 5 per company card, 25,000 objects a month; ordering a company report takes 1 of the monthly company-report allowance (5 on Business) and no objects, beyond it 150 balance tokens per company only with the user's consent (`allow_paid`); cancelling and reading your own reports is free. `estimate_cost` (free) prices a call before it is made. A missing figure is unknown, never zero.
+- Twenty-one tools in all. Costs are in the tool reference; `get_usage` always answers from the server.
 
 ## Recipes
 
@@ -46,13 +45,13 @@ everything at once.
 
 ## Skills
 
-- [Skills](https://github.com/Spytrend/spytrend-mcp/tree/main/skills): seven ready-made workflows for Claude Code and Codex — vertical intelligence, advertiser overview, webmaster overview, website review, keyword search, shop discovery, startup research. Plain folders; copy into the assistant's skills directory.
+- [Skills](https://github.com/Spytrend/spytrend-mcp/tree/main/skills): six ready-made workflows for Claude Code and Codex — vertical intelligence, advertiser overview, webmaster overview, website review, keyword search, shop discovery. Plain folders; copy into the assistant's skills directory.
 - [Connection manual for agents](https://mcp.spytrend.com/llms.txt): token flow, per-client connection paths, access and billing, straight from the server.
 
 ## Product
 
 - [Plans](https://spytrend.com/pricing/?utm_source=github&utm_medium=repo&utm_campaign=mcp-launch): Starter free, Pro, Team, Enterprise
-- [Limits and tokens](https://github.com/Spytrend/spytrend-mcp/blob/main/docs/limits.md): what each call costs, what is free, Startups objects, what the assistant sees when the balance runs out
+- [Limits and tokens](https://github.com/Spytrend/spytrend-mcp/blob/main/docs/limits.md): what each call costs, what is free, what the assistant sees when the balance runs out
 - [Contact and support](https://spytrend.com/contact/): questions about connecting, access and accounts
 - [Privacy policy](https://spytrend.com/legal/privacy/)
 - [Terms of service](https://spytrend.com/legal/terms/)

@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.0.3",
   "contract": "contract.md",
   "skills": [
     {
@@ -141,39 +141,6 @@
         {"name": "output_mode", "title": "Output", "description": "Preferred output mode.", "allowed": ["chat", "markdown", "html"]},
         {"name": "language", "title": "Language", "description": "BCP-47 output language; defaults to the user's language.", "max_length": 16},
         {"name": "include_media", "title": "Media", "description": "Whether confirmed media retrieval is allowed.", "allowed": ["false", "true"]}
-      ]
-    },
-    {
-      "name": "spytrend-startup-research",
-      "prompt": "spytrend_startup_research",
-      "title": "Startup research",
-      "description": "Research funded companies with Spytrend Startups data: a company profile with funding rounds, revenue and valuation figures, team size, website traffic and ads; a side-by-side comparison of 2 to 4 companies; a lookup for a company the catalog does not show yet; and ordering or reading the user's own company reports. Requires the Startups Business plan; billed in Startups objects, priced with the free estimate_cost before every paid call. Use when the user names a startup or a company domain and wants its funding, investors, traction or ads, or wants companies compared. Triggers: \"profile this startup\", \"how much has X raised\", \"compare these startups\", \"order a company report\", \"open my company report\"; RU «профиль стартапа», «сравни стартапы», «закажи отчёт по компании». Not for advertising research without a company in mind (use spytrend-vertical-intel) and not for one website's traffic and ads alone (use spytrend-website-review).",
-      "input_schema": "schemas/startup-research.input.json",
-      "tools": [
-        {"name": "get_usage", "response_fields": ["remaining"]},
-        {"name": "search_startups", "params": ["q", "domains", "country", "limit"], "response_fields": ["data", "total", "has_more", "returned_records", "objects_charged", "objects_remaining"]},
-        {"name": "get_startup", "params": ["domain", "include", "limit"], "response_fields": ["data", "included.people", "objects_charged", "objects_remaining", "charge_notice"]},
-        {"name": "compare_startups", "params": ["domains", "include_cards"], "response_fields": ["companies.domain", "companies.status", "fields.field", "fields.values.value", "fields.values.status", "fields.values.quality", "fields.highest", "note", "objects_charged", "objects_remaining"]},
-        {"name": "lookup_startup", "params": ["q", "country"], "response_fields": ["status", "data.domain", "data.company", "data.options", "data.retry_at", "objects_charged", "objects_remaining"]},
-        {"name": "search_startup_news", "params": ["domain", "since", "until", "limit"], "response_fields": ["data", "has_more", "returned_records", "objects_charged", "objects_remaining"]},
-        {"name": "get_startup_ads", "params": ["domain", "source", "limit", "cursor"], "response_fields": ["source", "data", "tiktok_data", "next_cursor", "has_more", "returned_records", "objects_charged", "objects_remaining"]},
-        {"name": "create_company_report", "params": ["domains", "objective", "window_days", "language", "allow_paid"], "response_fields": ["data.id", "data.status", "data.companies", "charged_from", "already_existed", "reports_remaining", "reports_included", "period_end", "balance_tokens", "note"]},
-        {"name": "retry_company_report", "params": ["report_id", "allow_paid"], "response_fields": ["data.id", "data.status", "charged_from", "already_existed", "reports_remaining", "balance_tokens", "note"]},
-        {"name": "cancel_company_report", "params": ["report_id"], "response_fields": ["data.id", "data.status", "reports_remaining", "note"]},
-        {"name": "list_company_reports", "params": ["source", "kind", "domain", "q", "limit", "cursor"], "response_fields": ["research", "research_status", "saved", "saved_status", "saved_next_cursor", "objects_charged", "objects_remaining"]},
-        {"name": "get_company_report", "params": ["report_id", "type"], "response_fields": ["data.id", "data.type", "data.status", "data.companies", "data.has_result", "data.result"]}
-      ],
-      "arguments": [
-        {"name": "mode", "title": "Mode", "description": "Profile one company, compare 2–4, look up a company outside the catalog, read saved reports, or order a company report.", "required": true, "allowed": ["profile", "compare", "lookup", "reports", "order_report"]},
-        {"name": "company", "title": "Company", "description": "Company name, domain or website URL.", "max_length": 200},
-        {"name": "companies", "title": "Companies", "description": "Comma-separated list of 2 to 4 company domains to compare.", "max_length": 1100},
-        {"name": "country", "title": "Country", "description": "Optional ISO-2 country code of the company.", "max_length": 2},
-        {"name": "objective", "title": "Objective", "description": "What the ordered company report should answer, in up to 500 characters.", "max_length": 500},
-        {"name": "window_days", "title": "Window", "description": "Days of history the ordered report covers: 30, 90 or 365.", "allowed": ["30", "90", "365"]},
-        {"name": "allow_paid", "title": "Paid order", "description": "Whether a report beyond the monthly allowance may use the token balance, only after the user has agreed to the price.", "allowed": ["false", "true"]},
-        {"name": "include_people", "title": "Team", "description": "Whether public team members are added to a profile.", "allowed": ["false", "true"]},
-        {"name": "output_mode", "title": "Output", "description": "Preferred output mode.", "allowed": ["chat", "markdown", "html"]},
-        {"name": "language", "title": "Language", "description": "BCP-47 output language; defaults to the user's language.", "max_length": 16}
       ]
     }
   ]
