@@ -101,11 +101,6 @@ tools itself.
 
 > What is new and picking up in advertising for home services in the UK?
 
-On the Startups Business plan:
-
-> Compare these three startups on funding, revenue, team size and ads — and tell me the cost in
-> objects before you start.
-
 More, with what comes back and how to read it: [the recipes](../examples/).
 
 ---

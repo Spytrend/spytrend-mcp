@@ -89,12 +89,6 @@ when you have no specific competitor in mind.
 **Folders and balance.** Save what you find to a folder and pull it back later. Check your balance,
 for free, at any time.
 
-**Startups.** On the Startups Business plan, the same connection opens a catalogue of funded
-companies: profiles with funding rounds, investors, revenue and valuation figures, team size, traffic
-and ads; side-by-side comparisons of 2 to 4 companies; a lookup for companies the catalogue does not
-show yet; and your own company reports: order a written report or comparison and read it back. It is billed in its own objects, not tokens — see
-[docs/tools.md#startups](docs/tools.md#startups).
-
 **Autonomous agents.** An agent can register itself and start sampling the database before anyone
 signs up: archive results, market-level rankings, ten rows a call, no media. Linking it to a
 Spytrend account opens the rest. See [docs/quickstart.md](docs/quickstart.md#autonomous-agents).
@@ -139,31 +133,6 @@ Most services answer one question: *show me this ad.* This one answers a differe
 | `list_favorites` | Return what is in your folders | Free |
 | `get_usage` | Show your plan, your balance and what each call costs | Free |
 
-**Startups** (Startups Business plan, billed in Startups objects, not tokens):
-
-| Tool | What it does | Cost |
-|---|---|---|
-| `search_startups` | Search funded companies by sector, country, stage, funding, revenue, team, traffic, investor and ads | 1 object per row · facets or summary 1 |
-| `get_startup` | Open one company card: profile, rounds, metrics, traffic, news, ads; optional public team and similar companies | 5 objects per card · 1 per included row |
-| `compare_startups` | Compare 2 to 4 companies field by field; a missing figure is unknown, never zero | 5 objects per company card |
-| `lookup_startup` | Find a company the catalogue does not show yet, by name or domain | 1 object only when a new company is found |
-| `enrich_startups` | Company cards for a list of up to 20 domains, with a status per domain | 5 objects per company card |
-| `search_funding_rounds` | Funding rounds by country, category, round type, amount and date | 1 object per row |
-| `search_investors` | Investors by name and by the rounds they joined | 1 object per row · facets or summary 1 |
-| `get_investor` | One investor card with one optional section: rounds, holdings, funds, team and more | 1 object per card or row |
-| `search_startup_news` | Funding, acquisition, revenue and valuation news | 1 object per row |
-| `get_startup_ads` | Meta and TikTok ads of catalogue companies, or of one company | 1 object per ad |
-| `get_startup_ads_growth` | Funding volume, investor activity and ad launches around funding rounds | 1 object per row |
-| `create_company_report` | Order a written report on 1 company or a comparison of 2–4 | 1 report from the monthly allowance (5 on Business); beyond it 150 balance tokens per company, only with your consent |
-| `retry_company_report` | Order a failed or cancelled report again | 1 report from the allowance |
-| `cancel_company_report` | Cancel a queued or running report; it goes back to the allowance | Free |
-| `list_company_reports` | Your own company research reports, comparisons and briefs | Free |
-| `get_company_report` | Open one of your company reports | Free |
-| `estimate_cost` | Price a call before making it: the most objects it can take and what is left | Free |
-
-> Startups: 25,000 objects a month per subscription, at most 20 results per call, at most 60 calls a
-> minute. Details: [docs/limits.md#startups-objects](docs/limits.md#startups-objects).
-
 > A page returns 20 rows unless you ask for more, and never more than 200. You are charged for rows
 > actually delivered — a short page refunds the difference automatically. The TikTok corpus
 > (`source=tiktok`, Pro plan and above) is priced separately at 100 tokens per delivered row.
@@ -179,9 +148,9 @@ the original word; the descriptions do not depend on it.
 
 ## Skills
 
-Seven ready-made workflows for Claude Code and Codex live in [skills/](skills/): map a vertical,
+Six ready-made workflows for Claude Code and Codex live in [skills/](skills/): map a vertical,
 profile an advertiser or the account behind a group of ads, review a website, search by keyword,
-discover shops, and research startups (Startups Business plan). Each skill is a plain folder — copy it into your assistant's skills directory and ask
+discover shops. Each skill is a plain folder — copy it into your assistant's skills directory and ask
 in plain language; the skill decides which tools to call and renders a report. Install steps and the
 shared contract: [skills/README.md](skills/README.md).
 
@@ -258,10 +227,10 @@ Details, along with what the assistant sees when the balance runs out:
 | File | What is in it |
 |---|---|
 | [docs/quickstart.md](docs/quickstart.md) | Connecting in five minutes, per client |
-| [docs/tools.md](docs/tools.md) | Every tool, advertising and Startups: what it does, when to use it, when not to, what comes back |
+| [docs/tools.md](docs/tools.md) | Every tool: what it does, when to use it, when not to, what comes back |
 | [docs/limits.md](docs/limits.md) | Credits, limits, plans, and what an error looks like |
 | [examples/](examples/) | Four recipes: what to ask, what comes back, how to read it |
-| [skills/](skills/) | Seven ready-made workflows for Claude Code and Codex, with install steps and the shared contract |
+| [skills/](skills/) | Six ready-made workflows for Claude Code and Codex, with install steps and the shared contract |
 | [server.json](server.json) | Catalogue metadata, published to the official MCP registry |
 | [llms.txt](llms.txt) | A short machine-readable map of this connection for AI assistants |
 

@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "spytrend-mcp-skills",
   "displayName": "Spytrend MCP Skills",
-  "version": "1.1.0",
-  "description": "Seven ready-made Spytrend workflows: advertising research on Meta and TikTok (vertical intelligence, advertiser overview, ad-network overview, website review, keyword search, shop discovery) and startup research.",
+  "version": "1.0.3",
+  "description": "Six ready-made Spytrend workflows for advertising research on Meta and TikTok: vertical intelligence, advertiser overview, ad-network overview, website review, keyword search and shop discovery.",
   "author": {
     "name": "Spytrend",
     "email": "collab@spytrend.com",
