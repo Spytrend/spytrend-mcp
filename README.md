@@ -165,6 +165,7 @@ its own tool names. Use them when an assistant should only see one slice of the 
 
 - [facebook-ads-library-mcp](https://github.com/Spytrend/facebook-ads-library-mcp) — Meta / Facebook ads library search, source pinned to Meta.
 - [tiktok-ads-library-mcp](https://github.com/Spytrend/tiktok-ads-library-mcp) — TikTok ad research, source pinned to TikTok (Pro plan).
+- [competitor-ads-mcp](https://github.com/Spytrend/competitor-ads-mcp) — Competitor domain research: all Meta ads linking to it, related creatives, site traffic and ad footprint.
 
 All adapters connect to `https://mcp.spytrend.com/mcp` and share the same account, plan and tokens.
 
